@@ -22,10 +22,16 @@ const FicheRestaurant = () => {
     activeHeart ? setActiveHeart(false) : setActiveHeart(true);
   };
 
+
   //To get the right restaurant data from the restaurantdata.json file
   const params = useParams();
   const restodata = restoData.find((resto) => resto.id === params.id);
   if(restodata !== undefined) { 
+
+    const BackgroundImage = {
+      backgroundImage: `url(${restodata.cover})`
+    };
+  
   return (
     <div>
         <div className="loading-area fadeOUT">
@@ -33,7 +39,7 @@ const FicheRestaurant = () => {
         </div>
         <Header />
         <section className="section-main">
-            <div className="section-main__img" style={{backgroundImage: `url(${restodata.cover})`}}>
+            <div className="section-main__img" style={BackgroundImage}>
 
             </div>
             <div className="menu-title">
@@ -75,8 +81,8 @@ const FicheRestaurant = () => {
               </div>
         </article>
     </section>
-    <div class="center-button">
-        <button class="multicolor-button center">Commander</button>
+    <div className="center-button">
+        <button className="multicolor-button center">Commander</button>
     </div>
     <Footer />
     </div>

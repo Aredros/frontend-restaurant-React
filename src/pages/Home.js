@@ -8,12 +8,12 @@ import restoData from '../data/restaurantdata.json';
 const Home = () => {
   return (
     <div>
-    <div class="loading-area fadeOUT">
-        <div class="loading-area__spinner"></div>
+    <div className="loading-area fadeOUT">
+        <div className="loading-area__spinner"></div>
     </div>
         <Header />
         <section className="home-banner">
-            <p className="home-banner_location"><i class="fa-solid fa-location-dot"></i>ICON Paris, Belleville</p>
+            <p className="home-banner_location"><i className="fa-solid fa-location-dot"></i>ICON Paris, Belleville</p>
             <div>
                 <h1>Reservez le menu qui vous convient</h1>
                 <p className="home-banner_subtitle">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
