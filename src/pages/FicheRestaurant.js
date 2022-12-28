@@ -27,10 +27,6 @@ const FicheRestaurant = () => {
   const params = useParams();
   const restodata = restoData.find((resto) => resto.id === params.id);
   if(restodata !== undefined) { 
-
-    const BackgroundImage = {
-      backgroundImage: `url(${restodata.cover})`
-    };
   
   return (
     <div>
@@ -38,10 +34,8 @@ const FicheRestaurant = () => {
           <div className="loading-area__spinner"></div>
         </div>
         <Header />
-        <section className="section-main">
-            <div className="section-main__img" style={BackgroundImage}>
-
-            </div>
+        <section className="section-main"> 
+            <img src={restodata.cover} alt="img-cover-restaurant"/>
             <div className="menu-title">
                 <h1 className="pretty-title">{restodata.title}</h1>
                 <p className="heart-icon">

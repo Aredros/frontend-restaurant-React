@@ -1,8 +1,9 @@
 .section-main{
     position: relative;
-    &__img{
+    img{
         height: 250px;
-        background-size: cover;
+        object-fit: cover;
+        width: 100%;
     }
 }
 
@@ -164,7 +165,7 @@
     /***************************SECTION Menu********************************/
 /***************************FULL MENU********************************/
 .section-main{
-    &__img{
+    img{
         height: 450px;
     }
 }
