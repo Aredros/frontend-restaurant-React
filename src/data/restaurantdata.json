@@ -2,7 +2,7 @@
 	{
 		"id": "rest1",
 		"title": "La palette du goût",
-		"cover": "public_assets/img/restaurants/la-palette-du-gout.jpg",
+		"cover": "https://images.pexels.com/photos/14920536/pexels-photo-14920536.jpeg",
 		"Location": "Ménilmontant",
 		"dishes": {
 			"entrees":[
@@ -61,7 +61,7 @@
     {
 		"id": "resto2",
 		"title": "La note enchantée",
-		"cover": "public_assets/img/restaurants/la-note-enchante.jpg",
+		"cover": "https://images.pexels.com/photos/14920538/pexels-photo-14920538.jpeg",
 		"Location": "Charonne",		
         "dishes": {
 			"entrees":[
@@ -125,7 +125,7 @@
     {
 		"id": "restora3",
 		"title": "A la française",
-		"cover": "public_assets/img/restaurants/a-la-francaise.jpg",
+		"cover": "https://images.pexels.com/photos/14920536/pexels-photo-14920536.jpeg",
 		"Location": "Cité Rouge",		
         "dishes": {
 			"entrees":[
@@ -184,7 +184,7 @@
     {
 		"id": "restorant4",
 		"title": "Le délice des sens",
-		"cover": "public_assets/img/restaurants/le-delice-des-sens.jpg",
+		"cover": "https://images.pexels.com/photos/14920539/pexels-photo-14920539.jpeg",
         "Location": "Folie-Méricourt",	
         "dishes": {
 			"entrees":[
