@@ -1,0 +1,230 @@
+.section-main{
+    position: relative;
+    &__img{
+        height: 250px;
+        background-size: cover;
+    }
+}
+
+/*****************************************************************************/
+.menu-title{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    justify-content: space-around;
+    background: $cardbg;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+ }
+
+ 
+/***************************LIST OF OPTIONS******************************/
+.menu-options{
+    margin-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-subtitles{
+    margin-left: 18px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #353535;
+    position: relative;
+}
+
+.menu-subtitles:before{
+    content: "";
+    position: absolute;
+    width: 14%;
+    height: 2px;
+    bottom: -5px;
+    border-bottom: 3px solid #99DAC8;
+}
+
+.dish{
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 94%;
+    margin: auto;
+    margin-bottom: 10px;
+    background: white;
+    @include card-shadow(#dbdad5);
+    @extend %border;
+    &__details{
+        margin-top: 2px;
+        transition: margin-right 1s;
+        width:100%;
+        overflow: hidden;
+        &__title{
+            font-size: 16px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            transition-property: width;
+            transition-duration: 1000ms;
+        }
+        &__comment{
+            font-size: 14px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+    &__details2{
+        &__price{
+            font-weight: 700;
+            margin: 15px;
+            transition: width 1s;
+            width:calc(100% - 30px);
+            display:flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        :hover + .dish__details{
+            &__comment{
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;   
+                max-width: 95%;
+            }
+        }
+    }
+    :hover >  &__details2{
+            &__price{
+                width: calc(100% - 112px);
+            }
+        }
+}
+
+
+.food__content {
+    overflow: hidden;
+    &:hover > .right {
+        margin-right: 0;
+        > .check {
+            transform: rotate(0turn);
+            -webkit-transform: rotate(0turn);
+            -moz-transform: rotate(0turn);
+            -ms-transform: rotate(0turn);
+            -o-transform: rotate(0turn);
+}
+    }
+    .left {
+        width: 100%;
+        height: 100%;
+        padding: 6px 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .right {
+        margin-right: -50px;
+        padding: 0;
+        width: 50px;
+        min-width: 50px;
+        background-color: $animatedDiv;
+        transition: all 500ms;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .check {
+            font-size: 1.5rem;
+            color: white;
+            transform: rotate(-1turn);
+            transition: transform 500ms;
+        }
+    }
+}
+
+
+/*******************************BUTTON************************************/
+.center-button{
+    text-align: center;
+}
+
+
+
+/*********************************************************************************/
+/* ------------------------------ RESPONSIVE : TABLETTE ( 768px) ----------------- */
+/*********************************************************************************/
+
+
+@media (min-width: 768px)
+{
+
+    /***************************SECTION Menu********************************/
+/***************************FULL MENU********************************/
+.section-main{
+    &__img{
+        height: 450px;
+    }
+}
+.menu-title{
+    width: 45%;
+    justify-content: space-around;
+    margin-left: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+ }
+ 
+ /***************************LIST OF OPTIONS******************************/
+.menu-area{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    .menu-options{
+        flex-basis: 48%;
+        .dish{
+            margin-bottom: 20px;
+            &__details{
+                &__comment{
+                    font-size: 13px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+            }   
+        }
+    }
+ }
+
+
+}
+
+/*********************************************************************************/
+/* -------------------- RESPONSIVE : DESKTOP (992px ) ------------------------------ */
+/*********************************************************************************/
+
+@media (min-width: 992px)
+{
+/***************************LIST OF OPTIONS******************************/
+.menu-area{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    .menu-options{
+        flex-basis: 31%;
+        margin-left: auto;
+    }
+ }
+
+ .dish{width: 85%;}
+
+}
+
+/*********************************************************************************/
+/* ------------------- RESPONSIVE : BIG TELEPHONE (  de 450px) ------------------- */
+/*********************************************************************************/
+
+@media (min-width: 450px)
+{
+
+}

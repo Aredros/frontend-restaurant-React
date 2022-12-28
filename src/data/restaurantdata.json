@@ -1,0 +1,233 @@
+[
+	{
+		"id": "rest1",
+		"title": "La palette du goût",
+		"cover": "../public_assets/img/restaurants/la-palette-du-gout.jpg",
+		"Location": "Ménilmontant",
+		"dishes": {
+			"entrees":[
+                {
+                    "title": "Fricasse d'escargot",
+                    "description": "Au piment d'Espelette",
+                    "price": 25
+                },
+                {
+                    "title": "Foie gras de canard mi-cuit",
+                    "description": "Et ses copeaux de truffe noire",
+                    "price": 35
+                },
+                {
+                    "title": "Oeuf au plat",
+                    "description": "Assaisonne à la truffe sur lit de caviar",
+                    "price": 20
+                }
+            ],
+			"plats":[
+                {
+                    "title": "Filets de boeuf aux herbes",
+                    "description": "Accompagne de sa ribambelle de légumes",
+                    "price": 40
+                },
+                {
+                    "title": "Parmentier de queue de boeuf",
+                    "description": "à la truffe noire sur sa purée de panais",
+                    "price": 35
+                },
+                {
+                    "title": "Filet de turbot",
+                    "description": "Aux agrumes",
+                    "price": 44
+                }
+            ],
+            "desserts":[
+                {
+                    "title": "Paris-Brest",
+                    "description": "Revisité",
+                    "price": 18
+                },
+                {
+                    "title": "Macaron au chocolat d'exception",
+                    "description": "Et glace à la vanille de Madagascar",
+                    "price": 22
+                },
+                {
+                    "title": "Mousse au chocolat",
+                    "description": "Au piment d'Espelette à la truffe noire",
+                    "price": 23
+                }
+            ]		
+        }
+	},
+    {
+		"id": "resto2",
+		"title": "La note enchantée",
+		"cover": "../public_assets/img/restaurants/la-note-enchante.jpg",
+		"Location": "Charonne",		
+        "dishes": {
+			"entrees":[
+                {
+                    "title": "Ravioles de foie gras",
+                    "description": "Accompagnés de leur crème à la truffe",
+                    "price": 25
+                },
+                {
+                    "title": "Caviar osciètre",
+                    "description": "Sur blini à la farine de blé noir",
+                    "price": 35
+                },
+                {
+                    "title": "Homard et espuma de potiron",
+                    "description": "Mariné aux zestes d'orange",
+                    "price": 18
+                },
+                {
+                    "title": "Foie gras de canard cuit entier",
+                    "description": "Confiture de figue et pain toasté",
+                    "price": 44
+                }
+            ],
+			"plats":[
+                {
+                    "title": "Noix de coquilles Saint-Jacquies",
+                    "description": "Sur lit de purée de céleri-rave",
+                    "price": 22
+                },
+                {
+                    "title": "Langoustine poêlée",
+                    "description": "Purée de patate douce",
+                    "price": 30
+                },
+                {
+                    "title": "Mijoté de queue de boeuf",
+                    "description": "Et riz sauvage aux zestes de citron",
+                    "price": 35
+                }
+            ],
+            "desserts":[
+                {
+                    "title": "Macaron noisette et chocolat",
+                    "description": "Glace au caramel brun et sel de Guerande",
+                    "price": 19
+                },
+                {
+                    "title": "Baba au rhum revisité",
+                    "description": "Avec son coulis de citron",
+                    "price": 22
+                },
+                {
+                    "title": "Tarte au citron meringuée",
+                    "description": "Déstructurée",
+                    "price": 10
+                }
+            ]		
+        }
+	},
+    {
+		"id": "restora3",
+		"title": "A la française",
+		"cover": "../public_assets/img/restaurants/a-la-francaise.jpg",
+		"Location": "Cité Rouge",		
+        "dishes": {
+			"entrees":[
+                {
+                    "title": "Tartare de poulpe acidulé",
+                    "description": "Aux zest d'orange",
+                    "price": 25
+                },
+                {
+                    "title": "Velouté de légumes d'antan",
+                    "description": "Carotte, panais, topinambour",
+                    "price": 35
+                },
+                {
+                    "title": "Soupe à l'oignon",
+                    "description": "Revisitée",
+                    "price": 20
+                }
+            ],
+			"plats":[
+                {
+                    "title": "Coquilles Saint-Jacques",
+                    "description": "Accompagnées x d'une purée de panais",
+                    "price": 40
+                },
+                {
+                    "title": "Magret de canard",
+                    "description": "Et parmentier de pommes de terres",
+                    "price": 35
+                },
+                {
+                    "title": "Pigeonneau d'Ille-et-Vilaine",
+                    "description": "Sur son lit de gnocchis aux légumes",
+                    "price": 44
+                }
+            ],
+            "desserts":[
+                {
+                    "title": "Pétales de violette glacés",
+                    "description": "Et purée de noisettes",
+                    "price": 18
+                },
+                {
+                    "title": "Fondant au chocolat",
+                    "description": "Revisité",
+                    "price": 22
+                },
+                {
+                    "title": "Millefeuille croustillant",
+                    "description": "Myrtilles et pâte d'amande",
+                    "price": 23
+                }
+            ]		
+        }
+	},
+    {
+		"id": "restorant4",
+		"title": "Le délice des sens",
+		"cover": "../public_assets/img/restaurants/le-delice-des-sens.jpg",
+        "Location": "Folie-Méricourt",	
+        "dishes": {
+			"entrees":[
+                {
+                    "title": "Tartare de thon",
+                    "description": "Assaisonné au yuzu",
+                    "price": 25
+                },
+                {
+                    "title": "Bouchée de homard croustillant",
+                    "description": "Et sa farandole de petits légumes",
+                    "price": 35
+                },
+                {
+                    "title": "Velouté de cèpes",
+                    "description": "Aux truffes",
+                    "price": 20
+                }
+            ],
+			"plats":[
+                {
+                    "title": "Poulet rôti aux herbes de Provence",
+                    "description": "Et sa crème de truffe",
+                    "price": 40
+                },
+                {
+                    "title": "Langouste rôtie",
+                    "description": "Et ses légumes de saison",
+                    "price": 35
+                }
+            ],
+            "desserts":[
+                {
+                    "title": "Farandole de desserts",
+                    "description": "Du chef",
+                    "price": 18
+                },
+                {
+                    "title": "Crème brulée",
+                    "description": "Revisitée",
+                    "price": 23
+                }
+            ]		
+        }
+	}
+]

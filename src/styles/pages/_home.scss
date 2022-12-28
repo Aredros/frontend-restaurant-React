@@ -1,0 +1,106 @@
+$cardbg: #F6F6F6;
+%border{ border-radius:8px ; -webkit-border-radius:8px ; -moz-border-radius:8px ; -ms-border-radius:8px ; -o-border-radius:8px ; }
+%shadow{ box-shadow: 4px 4px 6px #b9b9b9 }
+
+/***************************SECTION ONE********************************/
+.home-banner{
+    text-align: center;
+    padding: 15px 0 0;
+    background: #EAEAEA;
+    &_location{
+        color: #353535;
+        width: 100%;
+        font-weight: 700;
+        padding: 0 0 15px ;
+    }    
+    div{
+        h1{
+            font-size: 25px;
+            font-weight: 700;
+            padding: 0 15px 15px;
+        };
+        padding: 30px 15px;
+        background: $cardbg;
+        p{
+            color: rgb(46, 46, 46);
+            font-size: 17px;
+        }
+    }
+}
+
+.fonctions{
+    width: 90%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+/*********************************************************************************/
+/* ------------------------------ RESPONSIVE : TABLETTE ( 768px) ----------------- */
+/*********************************************************************************/
+
+
+@media (min-width: 768px)
+{
+    /**********************SECTION ONE**********************/
+    .home-banner{
+        background: #F6F6F6;
+        text-align: center;
+        padding: 5px 35px 0;
+        &_location{
+            width: 300px;
+            margin: auto;
+            padding: 0 0 5px ;
+            background: #ffffff;
+            position: relative;
+            top: -10px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+        }  
+        div{
+            text-align: center;
+            background: #F6F6F6;
+            padding: 7vh 15px;
+        }
+        h1{
+            font-size: 35px;
+            font-weight: 700;
+            padding: 0 15px 35px;
+        }
+    }
+
+    /**********************SECTION TWO**********************/
+.fonctions{
+    width: 45%;
+}
+}
+
+/*********************************************************************************/
+/* -------------------- RESPONSIVE : DESKTOP (992px ) ------------------------------ */
+/*********************************************************************************/
+
+@media (min-width: 992px)
+{
+    /**********************SECTION ONE**********************/
+    .home-banner{
+        div{
+            padding: 10vh 15px;
+        }
+    }
+
+    /**********************SECTION TWO**********************/
+    .fonctions{
+        width: 35%;
+    }
+
+}
+
+/*********************************************************************************/
+/* ------------------- RESPONSIVE : BIG TELEPHONE (  de 450px) ------------------- */
+/*********************************************************************************/
+
+@media (min-width: 450px)
+{
+
+}

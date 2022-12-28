@@ -1,0 +1,113 @@
+/***************************RESTAURANTS********************************/
+.restaurants{
+    background: $cardbg;
+    padding: 37px 0 0;
+    width: 95%;
+    margin: auto;
+    h2{
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+}
+.restaurants__cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    article{
+        position: relative;
+        @include card-shadow(#dbdad5);
+        @extend %border;
+        a{
+        text-decoration: none;
+        color: inherit;
+        }
+        .restaurant-card-text-area{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+        }
+    }
+    .restaurant-img{
+        object-fit: cover;
+        width: 100%;
+        height: 160px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    .new-restaurant-tag{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background: #99DAC8;
+        color: #078B6B;
+        padding: 5px 6px;
+        font-size: 10px;
+        font-weight: 700;
+    }
+}
+.restaurants{
+    .far{
+        color: #353535;
+    }
+}
+
+
+/*********************************************************************************/
+/* ------------------------------ RESPONSIVE : TABLETTE ( 768px) ----------------- */
+/*********************************************************************************/
+
+
+@media (min-width: 768px)
+{
+    /**********************SECTION THREE**********************/
+.restaurants{
+    width: 90%;
+    margin: auto;
+    h2{
+        text-align: center;
+        padding-bottom: 50px;
+    }
+}
+.restaurants__cards{
+    gap: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .restaurant-img{
+        height:250px;
+    }
+    article{
+        flex-basis: 45%;
+    }
+}
+
+}
+
+/*********************************************************************************/
+/* -------------------- RESPONSIVE : DESKTOP (992px ) ------------------------------ */
+/*********************************************************************************/
+
+@media (min-width: 992px)
+{
+    /**********************SECTION THREE**********************/
+.restaurants__cards{
+    flex-wrap: nowrap;
+    .restaurant-img{
+        height: 340px;
+    }
+    article{
+        flex-basis: 23%;
+    }
+}
+
+}
+
+/*********************************************************************************/
+/* ------------------- RESPONSIVE : BIG TELEPHONE (  de 450px) ------------------- */
+/*********************************************************************************/
+
+@media (min-width: 450px)
+{
+
+}

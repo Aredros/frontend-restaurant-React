@@ -1,0 +1,223 @@
+
+/* Typographies : Raleway, shrikhand*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: Shrikhand-Regular;
+    src: url("../assets/fonts/Shrikhand-Regular.ttf");
+    font-display: swap;
+    font-weight: normal;
+  }
+
+$cardbg: #F6F6F6;
+$animatedDiv: #9AE2D0;
+
+@mixin card-shadow($colour){
+    box-shadow: 4px 4px 6px $colour;
+    }
+
+%border{ border-radius:8px ; -webkit-border-radius:8px ; -moz-border-radius:8px ; -ms-border-radius:8px ; -o-border-radius:8px ; }
+
+.pretty-title{font-family: 'Shrikhand-Regular', 'Raleway', 'sans-serif', impact;}
+
+
+@import "./components/header";
+@import "./components/baliseicon";
+@import "./components/menuoptions";
+@import "./components/restocard";
+@import "./components/footer";
+@import "./pages/errorpage";
+@import "./pages/ficherestaurant";
+@import "./pages/home";
+
+// @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+  font-family: 'Raleway', 'sans-serif', impact, arial;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0 auto;
+}
+
+h1
+{
+  font-family: 'Raleway', 'sans-serif', impact, arial;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: black;
+  margin-block-start : 0.2em;
+  margin-block-end : 0.2em;
+}
+
+h2
+{
+  font-family: 'Raleway', 'sans-serif', impact, arial;
+  font-size: 1em;
+  text-decoration: none;
+  color: black;
+  margin-block-start : 0.2em;
+  margin-block-end : 0.2em;
+}
+
+/***********************LOADING ANIMATION************************************/
+.loading-area{
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  background: white;
+  z-index: 999;
+  &__spinner{
+      margin-left: 50%;
+      margin-top: 20%;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(255, 255, 255, .3);
+      border-radius: 50%;
+      border-top-color: #a75cd5;
+      animation: spin 1s ease-in-out infinite;
+      -webkit-animation: spin 1s ease-in-out infinite;
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/**************************THE MULTICOLOR BUTTON************************/
+
+.multicolor-button{
+  background-image: linear-gradient(to left top, #a75cd5, #ba61d7, #cb66d8, #dc6cd9, #ec73da);
+  padding: 16px 40px;
+  font-weight: 700;
+  color: white;
+  margin: 25px 20px 20px;
+  border: 0;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  @include card-shadow(#dbdad5);
+}
+
+.multicolor-button:hover{
+  opacity: 0.8;
+}
+
+/***************************RANDOM ICONS********************************/
+/**********************************************************************/
+.heart-icon{
+  font-size: 25px;
+  color: black;
+  padding-right: 5px;
+}
+
+.section-three, .menu-title{
+  .fas{
+      //linear gradient on fontawesome icon
+      background: -webkit-linear-gradient(left top, #ba61d7 0%, #cb66d8 50%, #dc6cd9 50%, #ec73da 100%);    
+      -webkit-background-clip: text;                     
+      -webkit-text-fill-color: transparent;
+      // colors position
+      background-size: 200% 100%;
+      background-position: 100% 0; 
+      transition: background-position 0.3s;
+  }
+          // hover animation
+  .fas:hover{
+          background-position: 0 0;
+  }
+  
+}
+
+
+/*************************FONCTIONNEMENT********************************/
+
+/***************************fadeIN********************************/
+/************************Animation fade in********************************/
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-5vh); -webkit-transform: translateY(-5vh); -moz-transform: translateY(-5vh); -ms-transform: translateY(-5vh); -o-transform: translateY(-5vh); }
+  100% { opacity: 1; transform: translateY(0); -webkit-transform: translateY(0); -moz-transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration:5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: relative;
+}
+
+/***************************fadeOUT********************************/
+
+@-webkit-keyframes fadeOUT {
+  0% {opacity: 1; height: 100vh;}
+  80% {opacity: 1; height: 100vh}
+  99% {opacity: 0;height: 100vh}
+  100% {opacity: 0;height: 0vh}
+}
+
+@keyframes fadeOUT {
+  0% {opacity: 1; height: 100vh;}
+  80% {opacity: 1; height: 100vh}
+  99% {opacity: 0;height: 100vh}
+  100% {opacity: 0;height: 0vh}
+}
+
+.fadeOUT {
+  -webkit-animation-name: fadeOUT;
+  animation-name: fadeOUT;
+  -webkit-animation-duration:1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/*********************************************************************************/
+/* ------------------------------ RESPONSIVE : TABLETTE ( 768px) ----------------- */
+/*********************************************************************************/
+
+
+@media (min-width: 768px)
+{
+
+}
+
+/*********************************************************************************/
+/* -------------------- RESPONSIVE : DESKTOP (992px ) ------------------------------ */
+/*********************************************************************************/
+
+@media (min-width: 992px)
+{
+
+
+}
+
+/*********************************************************************************/
+/* ------------------- RESPONSIVE : BIG TELEPHONE (  de 450px) ------------------- */
+/*********************************************************************************/
+
+@media (min-width: 450px)
+{
+
+}
