@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/frontend-restaurant-React/static/css/main.8e9a606d.css",
+    "main.css": "/frontend-restaurant-React/static/css/main.eaea13d5.css",
     "main.js": "/frontend-restaurant-React/static/js/main.e1102282.js",
     "static/js/787.e3529821.chunk.js": "/frontend-restaurant-React/static/js/787.e3529821.chunk.js",
     "static/media/Shrikhand-Regular.ttf": "/frontend-restaurant-React/static/media/Shrikhand-Regular.8ba3e099e1ffb85f03b2.ttf",
     "index.html": "/frontend-restaurant-React/index.html",
-    "main.8e9a606d.css.map": "/frontend-restaurant-React/static/css/main.8e9a606d.css.map",
+    "main.eaea13d5.css.map": "/frontend-restaurant-React/static/css/main.eaea13d5.css.map",
     "main.e1102282.js.map": "/frontend-restaurant-React/static/js/main.e1102282.js.map",
     "787.e3529821.chunk.js.map": "/frontend-restaurant-React/static/js/787.e3529821.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e9a606d.css",
+    "static/css/main.eaea13d5.css",
     "static/js/main.e1102282.js"
   ]
 }
